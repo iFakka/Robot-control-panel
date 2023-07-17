@@ -1,0 +1,48 @@
+README.md
+
+Robot Control Panel
+This is a simple web application that allows controlling a robot's movement using a control panel. When a direction button is clicked, it displays a pop-up window with the first letter of the direction and opens a new window displaying the same letter. It also sends the letter to a PHP file for further processing.
+
+Technologies Used
+HTML
+CSS
+JavaScript
+PHP
+XAMPP (or any other web server stack with Apache, PHP, and MySQL)
+Setup and Usage
+Install XAMPP or a similar web server stack that includes Apache, PHP, and MySQL.
+
+Start the web server and make sure Apache and MySQL modules are running.
+
+Place the index.html, styles.css, and script.js files in the appropriate folder of your web server. For XAMPP, the default folder is typically htdocs in the XAMPP installation directory.
+
+Open a web browser and visit http://localhost/your_folder_name/index.html, replacing your_folder_name with the actual folder name where you placed the files.
+
+The webpage should now be displayed, showing the robot control panel.
+
+Click on any of the direction buttons (Forward, Left, Stop, Right, Back). It will display a pop-up window with the first letter of the direction, open a new window with the letter displayed, and send the letter to the PHP file for further processing.
+
+You can check the console in the web browser for any success or error messages related to the data sending process.
+
+Database Configuration
+To configure the database for storing the letters sent by the control panel, follow these steps:
+
+Ensure that you have a database server (such as MySQL) set up and running.
+
+Create a new database in phpMyAdmin or any other database management tool.
+
+Update the PHP code in process.php with the correct database credentials and table name.
+
+Set the $servername variable to the hostname or IP address of your database server.
+Set the $username variable to the username for accessing the database.
+Set the $password variable to the corresponding password.
+Set the $database variable to the name of the database you created.
+Set the $table variable to the name of the table where you want to store the letters.
+Save the changes to process.php and ensure it is in the same directory as the other files.
+
+Troubleshooting
+If the webpage is not displayed correctly or the buttons don't work, verify that the file paths and folder names are correct.
+
+Check the browser console for any error messages or response text when clicking the buttons. This can help identify any issues related to AJAX requests or data sending.
+
+Ensure that the PHP file (process.php) is correctly configured with the database credentials and table name.
